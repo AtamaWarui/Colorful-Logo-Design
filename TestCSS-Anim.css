@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--body-color);
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/458169.jpg);;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  h1 { color: #000080; font-family: 'Raleway',sans-serif; font-size: 25px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+ 
+  .box {
+    border-radius: 120px;
+    width: 200px;
+    height: 200px;
+    
+    background: #f0f0f0;
+    box-shadow:  0 0 0 #cccccc,
+                 0 0 0 #ffffff,
+                  10px 10px 10px #cccccc inset,
+                  -10px -10px 10px #ffffff inset;
+    animation: anime 3s cubic-bezier(1, 0.7, 0.3, 1) 1s infinite alternate;
+  }
+
+  @keyframes anime {
+    0% {
+      width: 220px;
+      height: 220px;
+      background: #23acbe;
+      box-shadow:  0 0 0 #cccccc,
+                   0 0 0 #ffffff,
+                    10px 10px 10px #cccccc inset,
+                    -10px -10px 10px #ffffff inset;
+    }
+    25% {
+      width: 60px;
+      height: 60px;
+      background: #d364b1;
+      box-shadow:  10px 10px 10px #cccccc,
+                   10px 10px 10px #ffffff,
+                   0 0 0 #cccccc inset,
+                   0 0 0 #ffffff inset;
+    }
+    50% {
+      width: 60px;
+      height: 240px;
+      background: #4ec6d6;
+      box-shadow:  10px 10px 10px #cccccc,
+                   10px 10px 10px #ffffff,
+                   0 0 0 #cccccc inset,
+                   0 0 0 #ffffff inset;
+    }
+    100% {
+      width: 480px;
+      height: 240px;
+      background: #fafafa;
+      box-shadow:  40px 40px 40px #cccccc,
+                   0 0 0 #ffffff,
+                   0 0 0 #cccccc inset,
+                   2px 2px 2px #ffffff inset;
+    }
+
+}
+   
